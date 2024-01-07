@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>
+        WebDev Project_1
+    </title> 
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Header part */
+
+        .header-class{
+            background-color:rgb(248, 240, 228);
+            background-image: url('developer.png'),url('header_bg.png');
+            background-repeat: no-repeat;
+            background-position:top left ,bottom right;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 200px;
+        }
+        nav ul { 
+            display: flex;
+            align-items: center;
+        }
+        nav li{
+            list-style: none;
+            margin: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(21, 20, 20);
+        }
+        .nav-title{
+            color: black;
+            font-size: 45px;
+            font-weight: 800;
+        }
+        .text-color{
+            color: #FD6E0A;
+        }
+        .button-class{
+            background: #FD6E0A;
+            border-radius: 5px;
+            padding: 15px 35px;
+            border: 0px;
+            color: white;
+            font-size: 20px;
+            font-weight: 700px;
+        }
+        .banner{
+            padding: 30px 30px 0px 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+ 
+        }
+        .banner .profile-pic{
+            /* height: 700px; */
+            width: 500px;
+            padding: 0px;
+        }
+        .banner-containt{
+            max-width: 500px;
+        }
+        .banner-greeting{
+            font-size: 45px;
+            margin-bottom: 0px;
+            color: #474747;
+        }   
+        .banner-title{
+            font-weight: 700;
+            font-size: 85px;
+            /* color: #474747; */
+            margin-top:5px;
+            margin-bottom: 20px;
+        }
+        .text{
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+
+        /* Main section */
+        main {
+            max-width: 1140px;
+            margin: 0px auto;
+
+        }
+        main section{
+            margin-top: 130px;
+        }
+        .about {
+            padding: 130px;
+            border-radius: 10px;
+            background-color:#fff8f3;
+        }
+
+        .section-title{
+            color: #181818;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+
+        }
+        .section-description{
+            color: #757575;
+            text-align: center;
+            font-size: 18px;
+        }
+        .about{
+            margin: 130px;
+
+        }
+        /* .what-i-do-section{
+            background-color: rgb(223, 223, 223);
+        } */
+        .about-info-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .about-info{
+            text-align: center;
+            
+        }
+        #what-i-do-description{
+            padding: 30px auto;
+        }
+
+        .skill-container{
+            display: flex;
+            gap: 24px;
+        }
+        .skill-description{
+            font-size: large;
+            
+        }
+        .skill{
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #fff8f3;
+            box-shadow:0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+        }
+        .resume-column-title{
+            color: #474747;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .resume-cointainer{
+            display: flex;
+            gap: 70px;
+        }
+        .resume-cointainer hr{
+            margin: 20px;
+        }
+        .resume-item-institute , .resume-item-description {
+            color: #757575;
+
+        }
+        .resume-item-institute{
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        .resume-item-title{
+            color: #474747;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .download-cv{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+        /* footer part */
+
+        .footer-class{
+            background-color: rgb(255, 243, 229);
+            display: flex;
+            padding: 130px 200px;
+            margin-top: 100px;
+            gap: 100px;
+
+        }
+        .footer-column{
+            width: 50%;
+        }
+
+        .contact input[type="text"],input[type="email"], textarea {
+            display: block;
+            margin-bottom: 25px;
+            padding: 18px 35px;
+            border: none;
+            color: #757575;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .social-link a{
+            margin-right: 25px;
+        }
+        /* .contact{
+
+        }  */
+    </style>
+</head>
+<body>
+    <header class="header-class">
+        <nav>
+            <h3 class="nav-title">Ma<span class="text-color">r</span>y</h3>
+            <ul>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href=""><button class="button-class">Hire Me</button></a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-containt">
+                <h3 class="banner-greeting">Hi, I am</h3>
+                <h1 class="banner-title">Mary Hardy</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea.</p>
+                <button class="button-class">Download CV</button>
+                <button class="button-class">Contact</button>
+            </div>
+            <img src="hardy.png" alt="" class="profile-pic">
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="about">
+            <h3 class="section-title">About Me</h3>
+            <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur numquam nisi obcaecati officia quod suscipit modi alias hic dolores esse atque et dicta veniam exercitationem illo asperiores aspernatur, saepe sed corporis pariatur, eum iusto aperiam error repudiandae. Quasi, ipsa ipsum!</p>
+            <div class="about-info-container">
+                <div class="about-info">
+                    <h4 class="info-title">Name:</h4>
+                    <p class="info-despription">Mary Hardy</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Email:</h4>
+                    <p class="info-despription">info@gmail.com</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Date of birth:</h4>
+                    <p class="info-despription">11 November 1987</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">From:</h4>
+                    <p class="info-despription">Los angeles</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-i-do-section">
+            <p class="section-title">What I do</p>
+            <p class="section-description" id="what-i-do-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab ipsam est recusandae quis unde maiores dolore impedit molestiae eum debitis quas sequi, sed accusantium quisquam officiis ut soluta odit!</p>
+
+            <div class="skill-container">
+                <div class="skill">
+                    <img src="js.png" alt="">
+                    <h2>
+                        <skill-title>Vanilla-JavaScript</skill-title>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel at excepturi ipsam rem! Corporis, doloremque?</p>
+                    </h2>
+                </div>
+                <div class="skill">
+                    <img src="react.png" alt="">
+                    <h3>
+                        <skill-title>React</skill-title>
+                        <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid id expedita tempora repellendus, consequatur ducimus!</p>
+                    </h3>
+                </div>
+                <div class="skill">
+                    <img src="nodejs.png" alt="">
+                    <h3>
+                        <skill-title>Node.JS</skill-title>
+                        <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, cum. Recusandae, adipisci. Quis, debitis sapiente.</p>
+                    </h3>
+                </div>
+                <div class="skill">
+                    <img src="mongo.png" alt="">
+                    <h3>
+                        <skill-title>MongoBD</skill-title>
+                        <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut aut labore nam. Sed, assumenda!</p>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title">A Summary of my Resume</h2>
+            <div class="resume-cointainer">
+                <div class="resume-column">
+                    <h3 class="resume-column-title">My Education</h3>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                    <hr>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                    <hr>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3 class="resume-column-title">My Experience</h3>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                    <hr>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                    <hr>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in CSE</h2>
+                        <h2 class="resume-item-institute">Harvard University / 2015-2017</h2>
+                        <p class="resume-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus vitae laudantium officiis fuga quod! Dolor ab dolorem accusantium doloribus.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="download-cv">
+                <button class="button-class">Downlod CV</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-class">
+        <div class="footer-column">
+            <h3 class="footer-title">Lets Connect</h3>
+            <p class="footer-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit! In molestias provident dignissimos quod quibusdam blanditiis facilis suscipit quisquam?</p>
+            <div class="social-link">
+                <a href=""><img src="facebook.png" alt=""></a>
+                <a href=""><img src="insta.png" alt=""></a>
+                <a href=""><img src="twitter.png" alt=""></a>
+            </div>
+
+
+        </div>
+        <div class="footer-column">
+            <h3 class="section-title">
+                Massage me
+            </h3>
+            <form action="" class="contact">
+                <input type="text" name="" id="" placeholder="Your Name">
+                <input type="email" placeholder="Your email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+                <input type="submit" value="submit" class="button-class">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
